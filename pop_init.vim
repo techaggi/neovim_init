@@ -10,13 +10,21 @@ set hlsearch
 set incsearch
 set nofoldenable
 
-let mapleader = ","
+let mapleader = " "
 
 
 cabbrev Q q!
 
-inoremap jj <ESC>
-::s/\%V/-/g                                                                                                                                            ::'<,'>s/ /-/g  
+inoremap jj <ESC>let mapleader = " "
+
+
+" replace space mit unterstrich im selektierten bereich
+noremap <leader>- :s/\%V /_/g
+
+" replace ende mit 2x space im ganzen file
+noremap <leader>4 :%s/$/  /
+
+                                                                                                                                          ::'<,'>s/ /-/g  
 
 :map rpsd :%s/Name. /\^V^V^M&/g^M 
 :map rpsd :'<,'>s/ /-/
