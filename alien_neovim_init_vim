@@ -22,7 +22,13 @@ noremap <leader>4 :%s/$/  /
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
-noremap <C-l> <C-w>l
+noremap <C-l> <C-w>l4
+
+"optisch insert mode erkennen
+ 
+autocmd InsertEnter * set cul
+autocmd InsertLeave * set nocul
+
 
 " make adjusting split size more user friendly
 
