@@ -8,10 +8,10 @@ set splitbelow splitright
 set noswapfile
 set hlsearch
 set incsearch
-set nofoldenable
+set nofoldenab
 
-let mapleader = " "
-
+"reload vim config
+command! Reload execute "source ~/.vimrc"
 
 cabbrev Q q!
 
