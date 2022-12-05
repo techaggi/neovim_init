@@ -17,6 +17,10 @@ cabbrev Q q!
 
 inoremap jj <ESC>let mapleader = " "
 
+"set tab and shiftkey
+set expandtab
+set tabstop=2
+set shiftwidth=4
 
 " replace space mit unterstrich im selektierten bereich
 noremap <leader>- :s/\%V /_/g
