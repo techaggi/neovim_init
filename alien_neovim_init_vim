@@ -58,6 +58,7 @@ imap jj <Esc>
 
 call plug#begin('~/.config/nvim/plugged')
 
+Plug 'https://github.com/tpope/vim-commentary'
 Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
 Plug 'https://github.com/preservim/nerdtree' " NerdTree
 Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
